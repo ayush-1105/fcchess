@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>FC CHESS CLUB</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="css/photosstyle.css" />
+        <script src="script.js"></script>
+        <script src="js/photojs.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <style>
+            body {
+                background: #fff;
+                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                color: #000;
+                margin: 0;
+                padding: 0;
+            }
+
+            section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .swiper {
+                width: 240px;
+                height: 320px;
+            }
+
+            .swiper-slide {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 18px;
+                font-size: 22px;
+                font-weight: bold;
+                color: #fff;
+            }
+
+            .swiper-slide:nth-child(1n) {
+                background-color: rgb(206, 17, 17);
+            }
+
+            .swiper-slide:nth-child(2n) {
+                background-color: rgb(0, 140, 255);
+            }
+
+            .swiper-slide:nth-child(3n) {
+                background-color: rgb(10, 184, 111);
+            }
+
+            .swiper-slide:nth-child(4n) {
+                background-color: rgb(211, 122, 7);
+            }
+
+            .swiper-slide:nth-child(5n) {
+                background-color: rgb(118, 163, 12);
+            }
+
+            .swiper-slide:nth-child(6n) {
+                background-color: rgb(180, 10, 47);
+            }
+
+            .swiper-slide:nth-child(7n) {
+                background-color: rgb(35, 99, 19);
+            }
+
+            .swiper-slide:nth-child(8n) {
+                background-color: rgb(0, 68, 255);
+            }
+
+            .swiper-slide:nth-child(9n) {
+                background-color: rgb(218, 12, 218);
+            }
+
+            .swiper-slide:nth-child(10n) {
+                background-color: rgb(54, 94, 77);
+            }
+            .swiper-slide img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: cover;
+            }
+            .club-title {
+                font-size: 24px;
+                font-weight: 900;
+                text-transform: uppercase;
+                color: #ff0000;
+                margin-bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 3rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="chess-loader"></div>
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">FC CHESS CLUB</label>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="matches.html">Matches</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a class="active" href="photos.html">Photos</a></li>
+            </ul>
+        </nav>
+        <h1 class="club-title">FC CHESS CLUB</h1>
+        <section>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="photos/photo1001.jpg" alt="no image" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/photo1002.jpg" alt="no image" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/photo1003.jpg" alt="no image" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/photo1004.jpg" alt="no image" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/photo1005.jpg" alt="no image" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/photo1006.jpg" alt="no image" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/photo1007.jpg" alt="no image" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/photo1008.jpg" alt="no image" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/photo1009.jpg" alt="no image" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/photo1010.jpg" alt="no image" />
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    effect: "cards",
+                    grabCursor: true,
+                });
+            </script>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 FC Chess Club. All rights reserved.</p>
+
+            <div class="footer-icons">
+                <a href="#" class="icon-link"
+                    ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="icon-link"
+                    ><i class="fab fa-whatsapp"></i
+                ></a>
+            </div>
+        </footer>
+    </body>
+</html>

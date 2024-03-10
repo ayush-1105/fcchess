@@ -1,0 +1,53 @@
+/* styles1.css */
+
+.player-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Background color */
+  }
+  
+  .player-card {
+    background-color: #ffffff; /* Neomorphic-style background color */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 200px;
+  }
+  
+  .player-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .player-link {
+    display: block;
+    color: #333333;
+    text-decoration: none;
+  }
+  
+  .player-number {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .player-name {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .player-card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .player-card {
+      width: calc(100% - 20px);
+    }
+  }
+  

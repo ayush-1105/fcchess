@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>FC CHESS CLUB</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+
+                justify-content: center;
+                align-items: center;
+                min-height: 200vh;
+
+                font-family: sans-serif;
+                background: url(back103.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            h1 {
+                position: relative;
+                margin: 0;
+                padding: 0;
+                margin-top: 5rem;
+                font-size: 10rem;
+                text-align: center;
+                background: url(back103.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+            h1:before {
+                content: attr(data-text);
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                text-shadow: -5px 5px 20px #000, -10px 10px 30px #000,
+                    -20px 15px 40px #000, -25px 20px 50px #000;
+                color: transparent;
+            }
+            @media (max-width: 790px) {
+                h1 {
+                    font-size: 5rem;
+                    margin-bottom: 10rem;
+                }
+                .welcome-section {
+                    margin-top: 15rem;
+                }
+            }
+        
+            .container {
+                min-width: 100px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .welcome-section,
+            .about-section,
+            .players-section,
+            .matches-section,
+            .photos-section {
+                text-align: center;
+                min-height: 600px;
+                background-color: #f7f7f7;
+                padding: 40px 0;
+            }
+
+            .welcome-section h1,
+            .about-section h2,
+            .players-section h2,
+            .matches-section h2,
+            .photos-section h2 {
+                color: #333;
+                margin-top: 5rem;
+            }
+
+            .welcome-section p,
+            .about-section p,
+            .players-section p,
+            .matches-section p,
+            .photos-section p {
+                color: #666;
+                font-size: 18px;
+                margin-top: 3rem;
+                line-height: 1.6;
+            }
+
+            .about-section {
+                background-color: #e9e9e9;
+            }
+
+            .about-section h2 {
+                color: #333;
+            }
+
+            .about-section p {
+                color: #666;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 10px 20px;
+                margin-top: 5rem;
+                background-color: #333;
+                color: #fff;
+
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+            .btn:hover {
+                background-color: #555;
+            }
+        </style>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">FC CHESS CLUB</label>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="matches.html">Matches</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="photos.html">Photos</a></li>
+            </ul>
+        </nav>
+
+        <h1 data-text="FC CHESS CLUB">FC CHESS CLUB</h1>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <section class="welcome-section">
+            <div class="container">
+                <h1>Welcome to FC Chess Club</h1>
+                <p>
+                    Experience the world of chess with us. Join our club to
+                    learn, compete, and have fun!
+                </p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>
+                    FC Chess Club is a vibrant community of chess enthusiasts.
+                    We promote the game of chess through...
+                </p>
+                <p>
+                    Founded in 2024, our club has a long history of fostering
+                    chess talent...
+                </p>
+            </div>
+        </section>
+
+        <section class="players-section">
+            <div class="container">
+                <h2>Meet Our Players</h2>
+                <p>Explore profiles of our talented players.</p>
+                <a href="players.html" class="btn">View Players</a>
+            </div>
+        </section>
+
+        <section class="matches-section">
+            <div class="container">
+                <h2>Upcoming Matches</h2>
+                <p>Check out our upcoming chess matches.</p>
+                <a href="matches.html" class="btn">View Matches</a>
+            </div>
+        </section>
+
+        <section class="photos-section">
+            <div class="container">
+                <h2>Photo Gallery</h2>
+                <p>Explore photos from our club events and tournaments.</p>
+                <a href="photos.html" class="btn">View Photos</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 FC Chess Club. All rights reserved.</p>
+
+            <div class="footer-icons">
+                <a href="#" class="icon-link"
+                    ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="icon-link"
+                    ><i class="fab fa-whatsapp"></i
+                ></a>
+            </div>
+        </footer>
+    </body>
+</html>

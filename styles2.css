@@ -1,0 +1,74 @@
+/* styles2.css */
+
+.matches-section {
+    padding: 20px;
+  }
+  
+  .matches-section h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .match-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .match-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .match-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .match-players {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .player-link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .result {
+    font-weight: bold;
+    text-align: center;
+    min-width: 50px;
+  }
+  
+  .result.win {
+    color: #070808;
+  }
+  
+  .result.loss {
+    color: #0a0a0a;
+  }
+  
+  .result.draw {
+    color: #070707;
+  }
+  
+  @media (max-width: 768px) {
+    .match-card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .match-card .result {
+      margin-top: 10px;
+    }
+    
+    .player-link {
+      padding: 5px; /* Padding for smaller screens */
+    }
+  }
+  
